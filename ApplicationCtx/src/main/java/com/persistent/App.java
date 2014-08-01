@@ -17,5 +17,9 @@ public class App
     	triangle.draw();
         System.out.println( "Hello World!" + triangle.getArea() );
         System.out.println("triangle::"+triangle);
+        Rectangle rectangle =(Rectangle) factory.getBean("rectangle");
+        System.out.println("Rectangle::"+rectangle);
+        rectangle =(Rectangle) factory.getBean("rectangle1");
+        System.out.println("Rectangle1::"+rectangle);
     }
 }
