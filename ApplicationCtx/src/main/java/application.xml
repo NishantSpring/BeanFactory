@@ -36,7 +36,14 @@
 		<constructor-arg value="0"/>
 	</bean>
 	<alias name="point3" alias="point7"/>
-	
+	<bean id="line" class="com.persistent.Line">
+		<property name="points">
+		<list>
+			<ref bean="point1"/>
+			<ref bean="point2"/>
+		</list>
+		</property>
+	</bean>
 	<bean id="rectangle1" class="com.persistent.Rectangle">
 		<property name="pointA">
 			<bean class="com.persistent.Point">

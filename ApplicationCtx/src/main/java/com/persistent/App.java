@@ -21,5 +21,7 @@ public class App
         System.out.println("Rectangle::"+rectangle);
         rectangle =(Rectangle) factory.getBean("rectangle1");
         System.out.println("Rectangle1::"+rectangle);
+        Line line =(Line)factory.getBean("line");
+        System.out.println("Lines::"+line);
     }
 }
