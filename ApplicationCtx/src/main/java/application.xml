@@ -9,7 +9,7 @@
 		<constructor-arg index="1"  type="int" value="10"/>
 		<constructor-arg index="2"  type="int" value="100"/>
 	</bean>
-	<bean id="rectangle" class="com.persistent.Rectangle">
+	<bean id="rectangle" class="com.persistent.Rectangle" name="abc">
 		<property name="pointA" ref="point1"/>
 		<property name="pointB" ref="point2"/>
 		<property name="pointC" ref="point3"/>
@@ -20,7 +20,7 @@
 		<constructor-arg value="10"/>
 		<constructor-arg value="0"/>
 	</bean>
-	<bean id="point2" class="com.persistent.Point">
+	<bean id="point2" class="com.persistent.Point" name="point5">
 		<constructor-arg value="10"/>
 		<constructor-arg value="20"/>
 		<constructor-arg value="0"/>
@@ -35,6 +35,7 @@
 		<constructor-arg value="20"/>
 		<constructor-arg value="0"/>
 	</bean>
+	<alias name="point3" alias="point7"/>
 	
 	<bean id="rectangle1" class="com.persistent.Rectangle">
 		<property name="pointA">
@@ -44,8 +45,8 @@
 				<constructor-arg value="0"/>			
 			</bean>
 		</property>
-		<property name="pointB" ref="point2"/>
-		<property name="pointC" ref="point3"/>
+		<property name="pointB" ref="point5"/>
+		<property name="pointC" ref="point7"/>
 		<property name="pointD" ref="point4"/>
 	</bean>
 </beans>
