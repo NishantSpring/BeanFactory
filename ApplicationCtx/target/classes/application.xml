@@ -3,7 +3,7 @@
 <!ENTITY contextInclude SYSTEM "org/springframework/web/portlet/context/WEB-INF/contextInclude.xml">
 ]>
 <beans>
-	<bean id="triangle" class="com.persistent.Triangle">
+	<bean id="triangle" class="com.persistent.Triangle" scope="singleton">
 		<property name="area" value="200"/>
 		<constructor-arg index="0" type="java.lang.String" value="20"/>
 		<constructor-arg index="1"  type="int" value="10"/>
@@ -56,4 +56,5 @@
 		<property name="pointC" ref="point7"/>
 		<property name="pointD" ref="point4"/>
 	</bean>
+	<bean id="square" class="com.persistent.Square" autowire="byName"/>
 </beans>
