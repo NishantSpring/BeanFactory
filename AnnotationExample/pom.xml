@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.persistent</groupId>
-  <artifactId>InterfaceImpl</artifactId>
+  <groupId>org.persistent</groupId>
+  <artifactId>AnnotationExample</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>InterfaceImpl</name>
+  <name>AnnotationExample</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -21,12 +21,5 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-      
-        <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-context</artifactId>
-        <version>3.2.10.RELEASE</version>
-    </dependency>
-  
   </dependencies>
 </project>
